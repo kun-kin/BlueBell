@@ -283,6 +283,11 @@
   transform: translateX(0%);
 }
 
+.banner.banner1 {
+  height: 100vh;
+  padding: 0;
+}
+
 section.banner {
   height: auto;
   padding: 300px 0;
