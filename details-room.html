@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlueBell</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" />
+    <link rel="stylesheet" href="./lib/css/style.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-main">
+                <div class="container">
+                    <div class="row">
+                        <a href="./index.html" class="logo">
+                            <img src="./images/logo_2.png" alt="">
+                        </a>
+                        <nav class="menu">
+                            <ul class="menu-list">
+                                <li class="menu-item">
+                                    <a href="./index.html" class="menu-link">
+                                        home
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="./about-us.html" class="menu-link">
+                                        about us
+                                    </a>
+                                    <ul class="sub-menu">
+                                        <li class="sub-menu__item">
+                                            <a href="./about-us.html" class="sub-menu__item-link">
+                                                about us
+                                            </a>
+
+                                        </li>
+                                        <li class="sub-menu__item">
+                                            <a href="./our-history.html" class="sub-menu__item-link">
+                                                out history
+                                            </a>
+
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="./room.html" class="menu-link">
+                                        rooms
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="./blog.html" class="menu-link">
+                                        blog
+                                    </a>
+
+                                </li>
+                                <li class="menu-item">
+                                    <a href="" class="menu-link">
+                                        pages
+                                    </a>
+                                    <ul class="sub-menu">
+                                        <li class="sub-menu__item">
+                                            <a href="./services.html" class="sub-menu__item-link">
+                                                service
+                                            </a>
+
+                                        </li>
+                                        <li class="sub-menu__item">
+                                            <a href="./restaurant.html" class="sub-menu__item-link">
+                                                out restaurant
+                                            </a>
+
+                                        </li>
+                                        <li class="sub-menu__item">
+                                            <a href="./gallery.html" class="sub-menu__item-link">
+                                                gallery
+                                            </a>
+
+                                        </li>
+                                        <li class="sub-menu__item">
+                                            <a href="./spa.html" class="sub-menu__item-link">
+                                                spa & relax
+                                            </a>
+
+                                        </li>
+                                        <li class="sub-menu__item">
+                                            <a href="./activities.html" class="sub-menu__item-link">
+                                                activities
+                                            </a>
+
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="./contact-us.html" class="menu-link">
+                                        contact us
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="menu-toggle">
+                            <img src="./images/icon-bar4.png" alt="">
+                        </div>
+                        <div class="header-link">
+                            <div class="header-link__main">
+                                <div class="header-link__main-phone">
+                                    <a href="tel:+ 061-4515432">
+                                        <i class="fa-light fa-mobile-screen-button"></i>061-4515432
+                                    </a>
+                                </div>
+                                <div class="header-link__main-btn">
+                                    <a href="" class="header-btn btn1">
+                                        reservation
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+        <div class="menu-mobile">
+            <div class="menu-overlay"></div>
+            <div class="close-btn">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <nav class="menu-box">
+                <div class="nav-logo">
+                    <a href="./index.html">
+                        <img src="./images/logo_2.png" alt="">
+                    </a>
+                </div>
+                <div class="menu-outer">
+                    <ul class="menu-mobile__list">
+                        <li class="menu-mobile__list-item">
+                            <a href="./index.html">home</a>
+                        </li>
+                        <li class="menu-mobile__list-item">
+                            <a href="">about us</a>
+                            <span class="dropdown-btn"><i class="fa-solid fa-angle-down"></i></span>
+                            <ul class="sub-menu">
+                                <li class="sub-menu__item">
+                                    <a href="./about-us.html">about us</a>
+                                </li>
+                                <li class="sub-menu__item">
+                                    <a href="./our-history.html">out history</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-mobile__list-item">
+                            <a href="./room.html">rooms</a>
+                        </li>
+                        <li class="menu-mobile__list-item">
+                            <a href="./blog.html">blog</a>
+                        </li>
+                        <li class="menu-mobile__list-item">
+                            <a href="">pages</a>
+                            <span class="dropdown-btn"><i class="fa-solid fa-angle-down"></i></span>
+                            <ul class="sub-menu">
+                                <li class="sub-menu__item">
+                                    <a href="./sẻ
+                                    .html">services</a>
+                                </li>
+                                <li class="sub-menu__item">
+                                    <a href="./restaurant.html">out restaurant</a>
+                                </li>
+                                <li class="sub-menu__item">
+                                    <a href="./gallery.html">gallery</a>
+                                </li>
+                                <li class="sub-menu__item">
+                                    <a href="./spa.html">spa & relax</a>
+                                </li>
+
+                                <li class="sub-menu__item">
+                                    <a href="./activities.html">activities</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-mobile__list-item">
+                            <a href="./contact-us.html">contact us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="social-link">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <i class="fa-brands fa-facebook-square"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fa-brands fa-instagram-square"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fa-brands fa-skype"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <main class="main">
+            <section class="banner">
+                <div class="bg-banner">
+                    <img src="./images/page-title-7.jpg" alt="">
+                </div>
+                <div class="banner-main">
+
+                    <div class="banner-cont">
+                        <div class="container">
+                            <h1 class="banner-title page-title">
+                                Rooms Details
+                            </h1>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="room-details">
+                <div class="room-details__main bg-light bg-shape">
+                    <div class="container">
+
+                        <div class="camera-gallery">
+                            <div data-src="https://fastwpdemo.com/newwp/bluebell/wp-content/uploads/2021/12/page-title-5-1000x667.jpg" data-thumd="https://fastwpdemo.com/newwp/bluebell/wp-content/uploads/2021/12/page-title-5-1000x667.jpg"></div>
+                            ssss
+                        </div>
+
+
+
+                        <div class="room-block">
+                            <div class="text">
+                                <span class="title-price">Price from </span>
+                                <span class="price">$150.0</span>
+                                <span class="unit">/ Night</span>
+                            </div>
+                            <h2 class="sec-title">
+                                Cozy Room
+                            </h2>
+                        </div>
+                        <div class="text">
+                            Our objective at Bluebell is to bring together our visitor’s societies and spirits with our own, communicating enthusiasm and liberality in the food we share. Official Chef and Owner Philippe Massoud superbly creates a blend of Lebanese, Levantine, Mediterranean
+                            motivated food blended in with New York mentality. Delightful herbs and flavors consolidate surfaces to pacify wide based palates.
+                        </div>
+                        <div class="text">
+                            Official Chef and Owner Philippe Massoud superbly creates a blend of Lebanese, Levantine, Mediterranean motivated food blended in with New York mentality.
+                        </div>
+                        <h4>Amenities</h4>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <ul class="list1">
+                                    <li>
+                                        <i class="fal fa-ad"></i>air conditioner
+                                    </li>
+                                    <li>
+                                        <i class="fal fa-ad"></i>air conditioner
+                                    </li>
+                                    <li>
+                                        <i class="fal fa-ad"></i>air conditioner
+                                    </li>
+                                    <li>
+                                        <i class="fal fa-ad"></i>air conditioner
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <ul class="list1">
+                                    <li>
+                                        <i class="fal fa-ad"></i>air conditioner
+                                    </li>
+                                    <li>
+                                        <i class="fal fa-ad"></i>air conditioner
+                                    </li>
+                                    <li>
+                                        <i class="fal fa-ad"></i>air conditioner
+                                    </li>
+                                    <li>
+                                        <i class="fal fa-ad"></i>air conditioner
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <ul class="list1">
+                                    <li>
+                                        <i class="fal fa-ad"></i>air conditioner
+                                    </li>
+                                    <li>
+                                        <i class="fal fa-ad"></i>air conditioner
+                                    </li>
+                                    <li>
+                                        <i class="fal fa-ad"></i>air conditioner
+                                    </li>
+                                    <li>
+                                        <i class="fal fa-ad"></i>air conditioner
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h4>House Rules</h4>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="check">check in</div>
+                                <div class="time">Check-in from 9:00 AM – anytime</div>
+                                <div class="subject">Early check-in subject to availability</div>
+                                <div class="age">Minimum check-in age – 18</div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="check">check out</div>
+                                <div class="time">Check-out before noon</div>
+                                <div class="subject">Check-out before noon</div>
+                            </div>
+                        </div>
+                        <h4>Special check-in instructions</h4>
+                        <div class="text">
+                            Visitors will get an email 5 days before appearance with registration guidelines; front work area staff will welcome visitors on appearance For additional subtleties, kindly contact the property utilizing the data on the booking affirmation.
+                        </div>
+                        <h4>Children and extra beds</h4>
+                        <div class="text">
+                            Youngsters are welcome Kids stay free! Youngsters stay free when utilizing existing sheet material; kids may not be qualified for free breakfast Rollaway/additional beds are accessible for $ 40.0 each day
+                        </div>
+                        <h4>Pets</h4>
+                        <div class="text">
+                            Not Allowed
+                        </div>
+                        <h4>Fitness Medical, and Health</h4>
+                        <div class="text">
+                            Providing gym and fitness coach on demand. We provide general medicines in emergency also.
+                        </div>
+                        <h4>Cancellation</h4>
+                        <div class="text">
+                            Youngsters are welcome Kids stay free! Youngsters stay free when utilizing existing sheet material; kids may not be qualified for free breakfast Rollaway/additional beds are accessible for $ 40.0 each day
+                        </div>
+                        <h4>Seasonal Price</h4>
+                        <table class="table-price">
+                            <tr>
+                                <td>
+                                    <h5>Season</h5>
+                                </td>
+                                <td>
+                                    <h5>From</h5>
+                                </td>
+                                <td>
+                                    <h5>To</h5>
+                                </td>
+                                <td>
+                                    <h5>Days</h5>
+                                </td>
+                                <td>
+                                    <h5>Price</h5>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Covid20</td>
+                                <td>12 Aug 2020</td>
+                                <td>01 April 2021</td>
+                                <td>Mon, Tue, Wed, Thu, Friday</td>
+                                <td>$37</td>
+                            </tr>
+                            <tr>
+                                <td>Covid20</td>
+                                <td>12 Aug 2020</td>
+                                <td>01 April 2021</td>
+                                <td>Mon, Tue, Wed, Thu, Friday</td>
+                                <td>$37</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+
+        </main>
+
+        <footer class="footer">
+            <div class="footer-main">
+                <div class="container">
+                    <div class="footer-gallery">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="inner-box">
+                                    <img src="./images/footer-1.jpg" alt="">
+                                    <div class="overlay-box">
+                                        <div class="overlay-inner">
+                                            <a href="">
+                                                <i class="fa-solid fa-eye"></i>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="inner-box">
+                                    <img src="./images/footer2.jpg" alt="">
+                                    <div class="overlay-box">
+                                        <div class="overlay-inner">
+                                            <a href="">
+                                                <i class="fa-solid fa-eye"></i>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="inner-box">
+                                    <img src="./images/footer-1.jpg" alt="">
+                                    <div class="overlay-box">
+                                        <div class="overlay-inner">
+                                            <a href="">
+                                                <i class="fa-solid fa-eye"></i>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="inner-box">
+                                    <img src="./images/footer2.jpg" alt="">
+                                    <div class="overlay-box">
+                                        <div class="overlay-inner">
+                                            <a href="">
+                                                <i class="fa-solid fa-eye"></i>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="inner-box">
+                                    <img src="./images/footer-1.jpg" alt="">
+                                    <div class="overlay-box">
+                                        <div class="overlay-inner">
+                                            <a href="">
+                                                <i class="fa-solid fa-eye"></i>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="inner-box">
+                                    <img src="./images/footer2.jpg" alt="">
+                                    <div class="overlay-box">
+                                        <div class="overlay-inner">
+                                            <a href="">
+                                                <i class="fa-solid fa-eye"></i>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-content">
+                        <div class="row">
+
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="infor-about">
+                                    <div class="logo-footer">
+                                        <a href="./index.html">
+                                            <img src="./images/logo_2.png" alt="">
+                                        </a>
+                                    </div>
+                                    <table>
+                                        <tr>
+                                            <td class="label">Tel:</td>
+                                            <td>
+                                                <a href="tel:+000-111-222-3333">000-111-222-3333</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="label">Email:</td>
+                                            <td>
+                                                <a href="mailto:infor@example.com">infor@example.com</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="label">Location:</td>
+                                            <td>
+                                                <a href="">
+                                                256, Resort Street, New York
+Blue Beach, 8974
+                                            </a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12">
+                                <h3 class="footer-title">
+                                    Quick Links
+                                </h3>
+                                <ul class="menu-quick-link">
+                                    <li>
+                                        <a href="">about us</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Boutique Apartment</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Jungle Safari Resort</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Mountain Chalet</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-5 col-md-6 col-sm-12">
+                                <h3 class="footer-title">
+                                    Sign up for our newsletter to receive special offers, news and events.
+
+                                </h3>
+                                <form action="" class="form-attack">
+                                    <div class="form-group">
+                                        <input type="text" name="" id="" class="form-control" placeholder="Enter your email address">
+                                        <button type="submit" class="btn-them">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <a href="" id="backtotop"><i class="fa-solid fa-arrow-up-long"></i></a>
+    </div>
+
+
+    <script src="./lib/js/jquery-3.6.0.min.js"></script>
+    <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js "></script>
+
+
+    <script src="./lib/js/style.js"></script>
+</body>
+
+</html>

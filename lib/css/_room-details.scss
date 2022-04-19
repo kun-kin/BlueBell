@@ -1,0 +1,83 @@
+section.room-details {
+    .room-details__main {
+        padding: 100px 0;
+        overflow: hidden;
+        .room-block {
+            .text {
+                font-size: 20px;
+                letter-spacing: 3px;
+                line-height: 35px;
+                color: var(--theme-color);
+                font-weight: 700;
+                font-family: "Glacial Indifference";
+            }
+        }
+        .text {
+            font-size: 18px;
+            line-height: 28px;
+            color: #797979;
+            font-weight: 400;
+            margin-bottom: 35px;
+        }
+        h4 {
+            font-size: 28px;
+            line-height: 60px;
+            color: #0e2a4e;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        .list1 {
+            font-size: 20px;
+            color: #575757;
+            font-weight: 400;
+            margin-bottom: 45px;
+            li {
+                margin-bottom: 10px;
+                i {
+                    font-size: 30px;
+                    margin-right: 20px;
+                    vertical-align: middle;
+                    position: relative;
+                    top: 3px;
+                }
+            }
+        }
+        .check {
+            font-size: 14px;
+            letter-spacing: 3px;
+            line-height: 47px;
+            color: var(--theme-color);
+            font-weight: 700;
+            font-family: "Roboto";
+            text-transform: uppercase;
+        }
+        .time,
+        .subject,
+        .age {
+            font-size: 18px;
+            line-height: 35px;
+            color: #797979;
+            font-weight: 400;
+        }
+        .age {
+            margin-bottom: 75px;
+        }
+        .table-price {
+            width: 100%;
+            h5 {
+                font-size: 18px;
+                color: #0e2a4e;
+                font-weight: 700;
+                font-family: GlacialIndifference-Bold;
+            }
+            td {
+                background: #f7f7f7;
+                font-size: 16px;
+                color: #242424;
+                font-weight: 400;
+                border: 2px solid #ffff;
+                padding: 13px 20px;
+            }
+        }
+    }
+}

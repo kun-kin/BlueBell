@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlueBell</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" />
+    <link rel="stylesheet" href="./lib/css/style.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-main">
+                <div class="container">
+                    <div class="row">
+                        <a href="./index.html" class="logo">
+                            <img src="./images/logo_2.png" alt="">
+                        </a>
+                        <nav class="menu">
+                            <ul class="menu-list">
+                                <li class="menu-item">
+                                    <a href="./index.html" class="menu-link">
+                                        home
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="./about-us.html" class="menu-link">
+                                        about us
+                                    </a>
+                                    <ul class="sub-menu">
+                                        <li class="sub-menu__item">
+                                            <a href="./about-us.html" class="sub-menu__item-link">
+                                                about us
+                                            </a>
+
+                                        </li>
+                                        <li class="sub-menu__item">
+                                            <a href="./our-history.html" class="sub-menu__item-link">
+                                                out history
+                                            </a>
+
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="./room.html" class="menu-link">
+                                        rooms
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="./blog.html" class="menu-link">
+                                        blog
+                                    </a>
+
+                                </li>
+                                <li class="menu-item">
+                                    <a href="" class="menu-link">
+                                        pages
+                                    </a>
+                                    <ul class="sub-menu">
+                                        <li class="sub-menu__item">
+                                            <a href="./services.html" class="sub-menu__item-link">
+                                                service
+                                            </a>
+
+                                        </li>
+                                        <li class="sub-menu__item">
+                                            <a href="./restaurant.html" class="sub-menu__item-link">
+                                                out restaurant
+                                            </a>
+
+                                        </li>
+                                        <li class="sub-menu__item">
+                                            <a href="./gallery.html" class="sub-menu__item-link">
+                                                gallery
+                                            </a>
+
+                                        </li>
+                                        <li class="sub-menu__item">
+                                            <a href="./spa.html" class="sub-menu__item-link">
+                                                spa & relax
+                                            </a>
+
+                                        </li>
+                                        <li class="sub-menu__item">
+                                            <a href="./activities.html" class="sub-menu__item-link">
+                                                activities
+                                            </a>
+
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="./contact-us.html" class="menu-link">
+                                        contact us
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="menu-toggle">
+                            <img src="./images/icon-bar4.png" alt="">
+                        </div>
+                        <div class="header-link">
+                            <div class="header-link__main">
+                                <div class="header-link__main-phone">
+                                    <a href="tel:+ 061-4515432">
+                                        <i class="fa-light fa-mobile-screen-button"></i>061-4515432
+                                    </a>
+                                </div>
+                                <div class="header-link__main-btn">
+                                    <a href="" class="header-btn btn1">
+                                        reservation
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+        <div class="menu-mobile">
+            <div class="menu-overlay"></div>
+            <div class="close-btn">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <nav class="menu-box">
+                <div class="nav-logo">
+                    <a href="./index.html">
+                        <img src="./images/logo_2.png" alt="">
+                    </a>
+                </div>
+                <div class="menu-outer">
+                    <ul class="menu-mobile__list">
+                        <li class="menu-mobile__list-item">
+                            <a href="./index.html">home</a>
+                        </li>
+                        <li class="menu-mobile__list-item">
+                            <a href="">about us</a>
+                            <span class="dropdown-btn"><i class="fa-solid fa-angle-down"></i></span>
+                            <ul class="sub-menu">
+                                <li class="sub-menu__item">
+                                    <a href="./about-us.html">about us</a>
+                                </li>
+                                <li class="sub-menu__item">
+                                    <a href="./our-history.html">out history</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-mobile__list-item">
+                            <a href="./room.html">rooms</a>
+                        </li>
+                        <li class="menu-mobile__list-item">
+                            <a href="./blog.html">blog</a>
+                        </li>
+                        <li class="menu-mobile__list-item">
+                            <a href="">pages</a>
+                            <span class="dropdown-btn"><i class="fa-solid fa-angle-down"></i></span>
+                            <ul class="sub-menu">
+                                <li class="sub-menu__item">
+                                    <a href="./sẻ
+                                    .html">services</a>
+                                </li>
+                                <li class="sub-menu__item">
+                                    <a href="./restaurant.html">out restaurant</a>
+                                </li>
+                                <li class="sub-menu__item">
+                                    <a href="./gallery.html">gallery</a>
+                                </li>
+                                <li class="sub-menu__item">
+                                    <a href="./spa.html">spa & relax</a>
+                                </li>
+
+                                <li class="sub-menu__item">
+                                    <a href="./activities.html">activities</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-mobile__list-item">
+                            <a href="./contact-us.html">contact us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="social-link">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <i class="fa-brands fa-facebook-square"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fa-brands fa-instagram-square"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fa-brands fa-skype"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <main class="main">
+            <section class="banner">
+                <div class="bg-banner">
+                    <img src="./images/page-title.jpg" alt="">
+                </div>
+                <div class="banner-main">
+
+                    <div class="banner-cont">
+                        <div class="container">
+                            <h1 class="banner-title page-title">
+                                blog details
+                            </h1>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="blog-details">
+                <div class="blog-details__main bg-light bg-shape">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-9 col-md-6">
+                                <div class="inner-blog">
+                                    <div class="image">
+                                        <img src="./images/blog-9.jpg" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <div class="post-meta">
+                                            <div class="date">
+                                                December 11, 2021
+                                            </div>
+                                            <span>
+                                                By: admin / 0 Comments
+                                            </span>
+                                        </div>
+                                        <div class="blog-text">
+                                            Our objective at Bluebell is to bring together our visitor’s societies and spirits with our own, communicating enthusiasm and liberality in the food we share.
+                                        </div>
+                                        <div class="blog-text2">
+                                            Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever
+                                            undertakes laborious physical exercise, except to obtain some advantage from it.
+                                        </div>
+                                        <div class="blog-text2">
+                                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed
+                                            quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex
+                                            ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.
+                                        </div>
+                                        <div class="blog-text2">
+                                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed
+                                            quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                                        </div>
+                                        <div class="blog-text2">
+                                            Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem
+                                            eum fugiat. Facebook Twitter Linkedin
+                                        </div>
+                                        <div class="blog-share-icon">
+                                            <div class="share-icon">
+                                                <i class="fal fa-share-alt"></i>
+                                            </div>
+                                            <ul class="social-icon">
+                                                <li class="facebook">
+                                                    <a href="">facebook</a>
+                                                </li>
+                                                <li class="twitter">
+                                                    <a href="">
+                                                        twitter
+                                                    </a>
+                                                </li>
+                                                <li class="linkedin">
+                                                    <a href="">
+                                                        linkedin
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="comment-form">
+                                    <div class="title">
+                                        <h2>Leave A Comment</h2>
+                                    </div>
+                                    <form action="" class="form-comment__inner">
+                                        <div class="row">
+                                            <div class="col-md-6 form-group">
+                                                <input type="text" name="" id="" class="form-control" placeholder="Name">
+                                            </div>
+                                            <div class="col-md-6 form-group">
+                                                <input type="text" name="" id="" class="form-control" placeholder="email">
+                                            </div>
+                                            <div class="col-md-12 form-group">
+                                                <textarea name="" id="" cols="30" rows="10" class="form-control comment" placeholder="type comment here"></textarea>
+                                            </div>
+                                            <div class="col-md-12 form-group">
+                                                <button type="submit" class="btn1">post comment</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+
+                                <div class="search-box">
+                                    <form action="">
+                                        <div class="form-group">
+                                            <input type="search" name="" id="" placeholder="enter search keywords" class="form-control">
+                                            <button type="submit"><i class="fas fa-search"></i></button>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <div class="widget cate-wedget">
+                                    <div class="title">
+                                        <h2>
+                                            Categories
+                                        </h2>
+                                    </div>
+                                    <ul>
+                                        <li class="cate-item">
+                                            <a href="">archive</a>
+                                        </li>
+                                        <li class="cate-item">
+                                            <a href="">new</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="widget popular-post">
+                                    <div class="title">
+                                        <h2>
+                                            popular post
+                                        </h2>
+                                    </div>
+                                    <div class="post">
+                                        <div class="thumd">
+                                            <img src="./images/image-7.jpg" alt="">
+                                        </div>
+                                        <div class="text">
+                                            <a href="">
+                                                How to book a Resort in best price
+                                            </a>
+                                        </div>
+                                        <div class="post-infor">
+                                            January 4, 2022
+                                        </div>
+                                    </div>
+                                    <div class="post">
+                                        <div class="thumd">
+                                            <img src="./images/image-7.jpg" alt="">
+                                        </div>
+                                        <div class="text">
+                                            <a href="">
+                                                How to book a Resort in best price
+                                            </a>
+                                        </div>
+                                        <div class="post-infor">
+                                            January 4, 2022
+                                        </div>
+                                    </div>
+                                    <div class="post">
+                                        <div class="thumd">
+                                            <img src="./images/image-7.jpg" alt="">
+                                        </div>
+                                        <div class="text">
+                                            <a href="">
+                                                How to book a Resort in best price
+                                            </a>
+                                        </div>
+                                        <div class="post-infor">
+                                            January 4, 2022
+                                        </div>
+                                    </div>
+                                    <div class="post">
+                                        <div class="thumd">
+                                            <img src="./images/image-7.jpg" alt="">
+                                        </div>
+                                        <div class="text">
+                                            <a href="">
+                                                How to book a Resort in best price
+                                            </a>
+                                        </div>
+                                        <div class="post-infor">
+                                            January 4, 2022
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="widget tag-post">
+                                    <div class="title">
+                                        <h2>tags</h2>
+                                    </div>
+                                    <div class="tags-cloud">
+                                        <a href="" class="tag-link">holiday</a>
+                                        <a href="" class="tag-link">hotels</a>
+                                        <a href="" class="tag-link">prices</a>
+                                        <a href="" class="tag-link">relaxation</a>
+                                        <a href="" class="tag-link">resort</a>
+                                        <a href="" class="tag-link">tips</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </main>
+
+        <footer class="footer">
+            <div class="footer-main">
+                <div class="container">
+                    <div class="footer-gallery">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="inner-box">
+                                    <img src="./images/footer-1.jpg" alt="">
+                                    <div class="overlay-box">
+                                        <div class="overlay-inner">
+                                            <a href="">
+                                                <i class="fa-solid fa-eye"></i>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="inner-box">
+                                    <img src="./images/footer2.jpg" alt="">
+                                    <div class="overlay-box">
+                                        <div class="overlay-inner">
+                                            <a href="">
+                                                <i class="fa-solid fa-eye"></i>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="inner-box">
+                                    <img src="./images/footer-1.jpg" alt="">
+                                    <div class="overlay-box">
+                                        <div class="overlay-inner">
+                                            <a href="">
+                                                <i class="fa-solid fa-eye"></i>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="inner-box">
+                                    <img src="./images/footer2.jpg" alt="">
+                                    <div class="overlay-box">
+                                        <div class="overlay-inner">
+                                            <a href="">
+                                                <i class="fa-solid fa-eye"></i>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="inner-box">
+                                    <img src="./images/footer-1.jpg" alt="">
+                                    <div class="overlay-box">
+                                        <div class="overlay-inner">
+                                            <a href="">
+                                                <i class="fa-solid fa-eye"></i>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="inner-box">
+                                    <img src="./images/footer2.jpg" alt="">
+                                    <div class="overlay-box">
+                                        <div class="overlay-inner">
+                                            <a href="">
+                                                <i class="fa-solid fa-eye"></i>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-content">
+                        <div class="row">
+
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="infor-about">
+                                    <div class="logo-footer">
+                                        <a href="./index.html">
+                                            <img src="./images/logo_2.png" alt="">
+                                        </a>
+                                    </div>
+                                    <table>
+                                        <tr>
+                                            <td class="label">Tel:</td>
+                                            <td>
+                                                <a href="tel:+000-111-222-3333">000-111-222-3333</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="label">Email:</td>
+                                            <td>
+                                                <a href="mailto:infor@example.com">infor@example.com</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="label">Location:</td>
+                                            <td>
+                                                <a href="">
+                                                256, Resort Street, New York
+Blue Beach, 8974
+                                            </a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12">
+                                <h3 class="footer-title">
+                                    Quick Links
+                                </h3>
+                                <ul class="menu-quick-link">
+                                    <li>
+                                        <a href="">about us</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Boutique Apartment</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Jungle Safari Resort</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Mountain Chalet</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-5 col-md-6 col-sm-12">
+                                <h3 class="footer-title">
+                                    Sign up for our newsletter to receive special offers, news and events.
+
+                                </h3>
+                                <form action="" class="form-attack">
+                                    <div class="form-group">
+                                        <input type="text" name="" id="" class="form-control" placeholder="Enter your email address">
+                                        <button type="submit" class="btn-them">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <a href="" id="backtotop"><i class="fa-solid fa-arrow-up-long"></i></a>
+    </div>
+
+
+    <script src="./lib/js/jquery-3.6.0.min.js"></script>
+    <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js "></script>
+    <script src="./lib/js/style.js"></script>
+</body>
+
+</html>

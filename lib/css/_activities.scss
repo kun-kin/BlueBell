@@ -1,0 +1,62 @@
+section.activities {
+    .activities-main {
+        padding: 100px 0;
+        .top-text {
+            margin-bottom: 40px;
+            .text {
+                position: relative;
+                font-size: 18px;
+                margin-bottom: 30px;
+            }
+        }
+        .inner-box {
+            padding-bottom: 120px;
+            max-width: 456px;
+            .image {
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .contain {
+                padding: 55px 50px;
+                margin-left: 65px;
+                background-color: #f1f3f6;
+                margin-top: -235px;
+                margin-right: 0;
+                position: relative;
+                .text2 {
+                    font-size: 14px;
+                    letter-spacing: 2px;
+                    line-height: 1.2em;
+                    color: var(--theme-color);
+                    font-weight: 700;
+                    font-family: "Roboto";
+                    text-transform: uppercase;
+                }
+                h5 {
+                    font-size: 28px;
+                    color: #0e2a4e;
+                    font-weight: 800;
+                    font-family: "Playfair Display";
+                    margin-bottom: 25px;
+                    margin-top: 8px;
+                }
+                .text3 {
+                    font-size: 18px;
+                    line-height: 28px;
+                    color: #797979;
+                    font-weight: 400;
+                }
+                @media(max-width:768px) {
+                    margin-left: 15px;
+                    padding: 30px;
+                }
+            }
+            @media(max-width:991px) {
+                padding-bottom: 30px;
+            }
+        }
+    }
+}

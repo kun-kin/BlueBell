@@ -1,0 +1,88 @@
+section.contact {
+    .contact-main {
+        padding: 100px 0;
+        .form-contact {
+            display: flex;
+            flex-wrap: wrap;
+            .form-control {
+                display: block;
+                width: 100%;
+                line-height: 28px;
+                height: 56px;
+                font-size: 16px;
+                padding: 10px 22px;
+                background: #ffffff;
+                color: #000000;
+                border: 1px solid #dddddd;
+                transition: all 500ms ease;
+                &::placeholder {
+                    text-transform: capitalize;
+                    color: #000000;
+                    font-weight: 400;
+                }
+            }
+            textarea {
+                min-height: 200px;
+                resize: none;
+            }
+            .btn1 {
+                border: none;
+            }
+        }
+        .contact-infor {
+            margin-left: 70px;
+            h4 {
+                font-size: 24px;
+                line-height: 31px;
+                color: #0e2a4e;
+                font-weight: 700;
+                font-family: "Playfair Display";
+                margin-bottom: 45px;
+                position: relative;
+            }
+            .address {
+                border-bottom: 1px solid #d4d4d4;
+                margin-bottom: 40px;
+                h4 {
+                    &::before {
+                        position: absolute;
+                        content: '';
+                        width: 50px;
+                        height: 1px;
+                        bottom: -15px;
+                        left: 0;
+                        background-color: #0e2a4e;
+                    }
+                }
+                .text {
+                    margin-left: 45px;
+                    font-size: 18px;
+                    line-height: 26px;
+                    color: #797979;
+                    font-weight: 400;
+                    font-family: 'roboto';
+                }
+            }
+            .phone {
+                h4 {
+                    margin-bottom: 15px;
+                }
+                i {
+                    color: var(--theme-color);
+                }
+                a {
+                    color: #797979;
+                    line-height: 56px;
+                    font-family: "roboto";
+                }
+                .text {
+                    margin-left: 45px;
+                    font-size: 18px;
+                    line-height: 31px;
+                    color: #797979;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}

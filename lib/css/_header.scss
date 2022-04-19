@@ -1,0 +1,285 @@
+.header {
+    // background-color: red;
+    top: 20px;
+    position: relative;
+    z-index: 99999;
+    .header-main {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    .header-main.fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: #0b2848;
+        box-shadow: 0 0 15px rgb(0 0 0 / 10%);
+        animation: SlideInDown;
+        animation-duration: 1s;
+        animation-delay: .3s;
+        @media(max-width: 1160px) {
+            padding: 20px 0;
+        }
+    }
+    .row {
+        align-items: center;
+        margin: 0;
+        .logo {
+            max-width: 220px;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .menu-toggle {
+            color: white;
+            display: block;
+            position: relative;
+            display: none;
+            @media(max-width: 1160px) {
+                display: block;
+            }
+        }
+        .menu {
+            &-list {
+                display: flex;
+                align-items: center;
+                .menu-item {
+                    display: inline-block;
+                    padding: 30px 20px;
+                    position: relative;
+                    .menu-link {
+                        text-transform: uppercase;
+                        // text-decoration: underline !important;
+                        font-weight: 700;
+                        color: white;
+                    }
+                    .sub-menu {
+                        position: absolute;
+                        top: 100%;
+                        left: 0;
+                        min-width: 240px;
+                        background-color: #da3c3c;
+                        opacity: 0;
+                        visibility: hidden;
+                        transition: all 0.3s linear;
+                        &__item {
+                            padding: 20px 20px;
+                            border-top: 1px solid white;
+                            transition: all 0.3s linear;
+                            &-link {
+                                text-transform: uppercase;
+                                color: white;
+                                font-weight: 700;
+                            }
+                            &:hover {
+                                background-color: black;
+                                transition: all 0.3s linear;
+                            }
+                        }
+                    }
+                    &:hover {
+                        .sub-menu {
+                            opacity: 1;
+                            visibility: visible;
+                            transition: all 0.3s linear;
+                        }
+                    }
+                }
+            }
+            @media(max-width:1160px) {
+                display: none;
+            }
+        }
+        .header-link {
+            &__main {
+                display: flex;
+                align-items: center;
+                &-phone {
+                    a {
+                        display: block;
+                        font-size: 17px;
+                        line-height: 55px;
+                        font-weight: 600;
+                        color: white;
+                        font-family: 'Roboto';
+                        i {
+                            margin-right: 10px;
+                        }
+                    }
+                }
+                &-btn {
+                    margin-left: 30px;
+                }
+            }
+            @media(max-width:768px) {
+                display: none;
+            }
+        }
+    }
+}
+
+.menu-mobile {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 300px;
+    padding-right: 30px;
+    max-width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999999;
+    .menu-overlay {
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        transform: translateX(101%);
+        transition: all 900ms ease;
+        background-color: #000;
+    }
+    .close-btn {
+        position: absolute;
+        right: 20px;
+        top: 15px;
+        line-height: 30px;
+        width: 24px;
+        text-align: center;
+        font-size: 20px;
+        color: #ffffff;
+        cursor: pointer;
+        z-index: 10;
+        transition: all 0.9s ease;
+    }
+    .menu-box {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        max-height: 100%;
+        overflow-y: auto;
+        background: #202020;
+        padding: 0px 0px;
+        z-index: 5;
+        opacity: 0;
+        visibility: hidden;
+        border-radius: 0px;
+        transform: translateX(101%);
+        .nav-logo {
+            position: relative;
+            padding: 30px 25px;
+            text-align: left;
+            img {
+                height: 38px;
+            }
+        }
+        .menu-outer {
+            .menu-mobile__list {
+                border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+                &-item {
+                    position: relative;
+                    display: block;
+                    border-top: 1px solid rgba(255, 255, 255, 0.10);
+                    a {
+                        position: relative;
+                        display: block;
+                        line-height: 24px;
+                        padding: 10px 25px;
+                        font-size: 15px;
+                        font-weight: 500;
+                        color: #ffffff;
+                        text-transform: uppercase;
+                        transition: all 0.3s linear;
+                        &:hover {
+                            color: yellow;
+                            font-style: italic;
+                            margin-left: 5px;
+                            transition: all 0.3s linear;
+                        }
+                    }
+                    .dropdown-btn {
+                        position: absolute;
+                        z-index: 20;
+                        top: 25px;
+                        right: 20px;
+                        transform: translateY(-50%);
+                        color: white;
+                        i {
+                            transition: .5s;
+                        }
+                    }
+                    .dropdown-btn.opened {
+                        i {
+                            transform: rotate(180deg);
+                            transition: .5s;
+                        }
+                    }
+                    .sub-menu {
+                        display: none;
+                        margin: 0;
+                        transition: .5s;
+                        &__item {
+                            border-top: 1px solid rgba(255, 255, 255, 0.10);
+                            a {
+                                font-size: 15px;
+                                margin-left: 20px;
+                                text-transform: capitalize;
+                                transition: all 0.3s linear;
+                                &:hover {
+                                    color: yellow;
+                                    font-style: italic;
+                                    margin-left: 5px;
+                                    transition: all 0.3s linear;
+                                }
+                            }
+                        }
+                    }
+                    .sub-menu.opened {
+                        display: block;
+                        transition: .5s;
+                    }
+                }
+            }
+        }
+        .social-link {
+            position: relative;
+            text-align: center;
+            padding: 30px 25px;
+            ul {
+                li {
+                    display: inline-block;
+                    margin: 10px;
+                    a {
+                        background-color: rgba(0, 0, 0, 0);
+                        color: rgb(255, 255, 255);
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.visible .menu-mobile {
+    opacity: 1;
+    visibility: visible;
+    .menu-overlay {
+        opacity: 0.30;
+        visibility: visible;
+        transition: all 0.7s ease;
+        transform: translateX(0%);
+    }
+    .menu-box {
+        opacity: 1;
+        visibility: visible;
+        transition: all 0.7s ease;
+        transform: translateX(0%);
+    }
+}
