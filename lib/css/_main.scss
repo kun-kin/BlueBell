@@ -30,6 +30,10 @@ section.banner {
             }
         }
     }
+    @media(max-width:576px) {
+        height: 50vh;
+        padding: 0;
+    }
 }
 
 section.banner.banner1 {

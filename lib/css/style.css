@@ -314,6 +314,12 @@ section.banner .banner-main .banner-cont .text {
   position: relative;
   margin-bottom: 35px;
 }
+@media (max-width: 576px) {
+  section.banner {
+    height: 50vh;
+    padding: 0;
+  }
+}
 
 section.banner.banner1 {
   height: 100vh;
