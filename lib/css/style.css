@@ -1733,19 +1733,25 @@ section.room-details .room-details__main .details-main .owl-nav {
   width: 100%;
 }
 section.room-details .room-details__main .details-main .owl-nav button {
-  font-size: 38px;
+  font-size: 58px;
   border: none;
+  color: white;
 }
 section.room-details .room-details__main .details-main .owl-nav button:hover {
   background-color: transparent;
 }
 section.room-details .room-details__main .details-main .owl-nav .owl-prev {
-  left: 45px;
-  position: absolute;
+  right: 45%;
+  position: relative;
 }
 section.room-details .room-details__main .details-main .owl-nav .owl-next {
-  right: 45px;
+  left: 45%;
+  position: relative;
+}
+section.room-details .room-details__main .details-main .owl-dots {
   position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 section.room-details .room-details__main .room-block .price-inner {
   font-size: 20px;

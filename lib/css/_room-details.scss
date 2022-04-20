@@ -20,20 +20,26 @@ section.room-details {
                 transform: translateY(-50%);
                 width: 100%;
                 button {
-                    font-size: 38px;
+                    font-size: 58px;
                     border: none;
+                    color: white;
                     &:hover {
                         background-color: transparent;
                     }
                 }
                 .owl-prev {
-                    left: 45px;
-                    position: absolute;
+                    right: 45%;
+                    position: relative;
                 }
                 .owl-next {
-                    right: 45px;
-                    position: absolute;
+                    left: 45%;
+                    position: relative;
                 }
+            }
+            .owl-dots {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
             }
         }
         .room-block {
