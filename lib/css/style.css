@@ -1871,6 +1871,30 @@ section.contact .contact-main .contact-infor .phone .text {
   color: #797979;
   font-weight: 400;
 }
+@media (max-width: 991px) {
+  section.contact .contact-main .contact-infor {
+    margin-top: 30px;
+  }
+}
+
+section.map .map-contrain {
+  padding: 100px 0 0;
+  margin: 0 60px;
+}
+section.map .map-contrain iframe {
+  width: 100%;
+}
+@media (max-width: 1300px) {
+  section.map .map-contrain {
+    margin: 0;
+  }
+}
+@media (max-width: 991px) {
+  section.map .map-contrain {
+    padding: 0;
+    padding-top: 70px;
+  }
+}
 
 section.blog .blog-main {
   padding: 100px 0;
