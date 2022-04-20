@@ -56,6 +56,11 @@
                         // text-decoration: underline !important;
                         font-weight: 700;
                         color: white;
+                        transition: .3s;
+                        &:hover {
+                            color: var(--theme-color);
+                            transition: .3s;
+                        }
                     }
                     .sub-menu {
                         position: absolute;
