@@ -1713,7 +1713,41 @@ section.room-details .room-details__main {
   padding: 100px 0;
   overflow: hidden;
 }
-section.room-details .room-details__main .room-block .text {
+section.room-details .room-details__main .details-main {
+  height: 470px;
+  width: 100%;
+  margin-bottom: 50px;
+}
+section.room-details .room-details__main .details-main .image-details,
+section.room-details .room-details__main .details-main .owl-stage-outer,
+section.room-details .room-details__main .details-main .owl-stage,
+section.room-details .room-details__main .details-main .owl-item,
+section.room-details .room-details__main .details-main .inner,
+section.room-details .room-details__main .details-main img {
+  height: 100%;
+}
+section.room-details .room-details__main .details-main .owl-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+section.room-details .room-details__main .details-main .owl-nav button {
+  font-size: 38px;
+  border: none;
+}
+section.room-details .room-details__main .details-main .owl-nav button:hover {
+  background-color: transparent;
+}
+section.room-details .room-details__main .details-main .owl-nav .owl-prev {
+  left: 45px;
+  position: absolute;
+}
+section.room-details .room-details__main .details-main .owl-nav .owl-next {
+  right: 45px;
+  position: absolute;
+}
+section.room-details .room-details__main .room-block .price-inner {
   font-size: 20px;
   letter-spacing: 3px;
   line-height: 35px;

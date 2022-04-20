@@ -2,8 +2,42 @@ section.room-details {
     .room-details__main {
         padding: 100px 0;
         overflow: hidden;
+        .details-main {
+            height: 470px;
+            width: 100%;
+            margin-bottom: 50px;
+            .image-details,
+            .owl-stage-outer,
+            .owl-stage,
+            .owl-item,
+            .inner,
+            img {
+                height: 100%;
+            }
+            .owl-nav {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 100%;
+                button {
+                    font-size: 38px;
+                    border: none;
+                    &:hover {
+                        background-color: transparent;
+                    }
+                }
+                .owl-prev {
+                    left: 45px;
+                    position: absolute;
+                }
+                .owl-next {
+                    right: 45px;
+                    position: absolute;
+                }
+            }
+        }
         .room-block {
-            .text {
+            .price-inner {
                 font-size: 20px;
                 letter-spacing: 3px;
                 line-height: 35px;
